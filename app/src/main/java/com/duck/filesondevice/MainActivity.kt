@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
                         .filter { Files.isDirectory(it) }.toList()
                     binding.txtResults.append("\n${directories}")
                 }
-            }else binding.txtResults.append("\ndisplay permission never")
+            }else displayNeverAskAgainDialog()
         }
 
     }
